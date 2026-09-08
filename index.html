@@ -142,25 +142,26 @@
       background: rgba(255, 255, 255, 0.05);
     }
 
-    .nav-cta {
+    /* EXACT BUTTON STYLES FOR .btn-p */
+    .btn-p {
       background: linear-gradient(135deg, #2563eb, #3b82f6);
-      color: #fff;
+      color: #fff !important;
       text-decoration: none;
       font-size: 13.5px;
-      font-weight: 600;
-      padding: 8px 18px;
+      font-weight: 700;
+      padding: 10px 20px;
       border-radius: 100px;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       box-shadow: 0 4px 14px var(--accent-glow);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
     }
 
-    .nav-cta:hover {
+    .btn-p:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+      box-shadow: 0 6px 22px rgba(59, 130, 246, 0.45);
     }
 
     /* ==========================================================================
@@ -257,37 +258,17 @@
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #2563eb, #3b82f6);
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 12px 24px;
-      border-radius: var(--radius-sm);
-      display: inline-flex;
       align-items: center;
-      gap: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      box-shadow: 0 4px 16px var(--accent-glow);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 22px rgba(59, 130, 246, 0.45);
     }
 
     .btn-secondary {
       background: rgba(255, 255, 255, 0.05);
       color: var(--text-main);
       text-decoration: none;
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 600;
-      padding: 12px 22px;
-      border-radius: var(--radius-sm);
+      padding: 10px 22px;
+      border-radius: 100px;
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -601,7 +582,7 @@
     }
 
     /* ==========================================================================
-       FEATURED PROJECTS (DIRECT-LINK CARDS, NO BROKEN MODALS)
+       FEATURED PROJECTS (DIRECT LINKING TO LINKEDIN)
        ========================================================================== */
     .project-grid {
       display: grid;
@@ -868,6 +849,7 @@
       flex-wrap: wrap;
       gap: 14px;
       margin-bottom: 36px;
+      align-items: center;
     }
 
     .footer-copy {
@@ -916,7 +898,7 @@
         width: 220px;
         height: 220px;
       }
-      .btn-primary, .btn-secondary {
+      .btn-p, .btn-secondary {
         width: 100%;
         justify-content: center;
       }
@@ -945,10 +927,10 @@
         </ul>
 
         <div>
-          <a href="assets/Amit_Kumar_Jha_Resume.pdf" download="Amit_Kumar_Jha_Resume.pdf" class="nav-cta">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            <span>Download CV</span>
-          </a>
+          <a class="btn-p" href="assets/Amit_Kumar_Jha_Resume.pdf" download="Amit_Kumar_Jha_Resume.pdf" target="_blank" rel="noopener noreferrer">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+  Download Updated CV
+</a>
         </div>
       </div>
     </div>
@@ -998,10 +980,10 @@
         </div>
 
         <div class="hero-btn-row">
-          <a href="assets/Amit_Kumar_Jha_Resume.pdf" download="Amit_Kumar_Jha_Resume.pdf" class="btn-primary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            <span>Download Updated CV</span>
-          </a>
+          <a class="btn-p" href="assets/Amit_Kumar_Jha_Resume.pdf" download="Amit_Kumar_Jha_Resume.pdf" target="_blank" rel="noopener noreferrer">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+  Download Updated CV
+</a>
           <a href="https://www.linkedin.com/in/amit-jha-support" target="_blank" rel="noopener" class="btn-secondary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
             <span>LinkedIn Profile</span>
@@ -1477,10 +1459,10 @@
       </p>
 
       <div class="footer-actions">
-        <a href="assets/Amit_Kumar_Jha_Resume.pdf" download="Amit_Kumar_Jha_Resume.pdf" class="btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          <span>Download Updated CV</span>
-        </a>
+        <a class="btn-p" href="assets/Amit_Kumar_Jha_Resume.pdf" download="Amit_Kumar_Jha_Resume.pdf" target="_blank" rel="noopener noreferrer">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+  Download Updated CV
+</a>
         <a href="https://www.linkedin.com/in/amit-jha-support" target="_blank" rel="noopener" class="btn-secondary">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           <span>Connect on LinkedIn</span>
